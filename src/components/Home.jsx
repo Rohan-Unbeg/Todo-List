@@ -22,7 +22,7 @@ const Home = () => {
 
   const deleteTask = (index) => {
     const fileteredArr = tasks.filter((val, i) => {
-      return i != index;
+      return i !== index;
     });
     setTasks(fileteredArr);
   };
